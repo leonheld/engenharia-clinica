@@ -22,17 +22,13 @@
 
 \begin{document}
 
-\title{FUNCIONAMENTO E USO SEGURO DE EMA - INCUBADORA NEONATAL\\
-{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
-should not be used}
+\title{FUNCIONAMENTO E USO SEGURO DE EMA - INCUBADORA NEONATAL}
 
-}
-
-\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Held, Leonardo J.}
+\IEEEauthorblockA{\textit{Universidade Federal de Santa Catarina / Fundação CERTI} \\
+\textit{Departamento de Engenharia Elétrica / Centro de Convergência Digital e Mecatrônica }\\
+Florianópolis, Brazil \\
+leonardo.held@grad.ufsc.br}
 \and
 \IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
@@ -60,23 +56,92 @@ email address or ORCID}
 \section{Introdução}
 
 \section{Descrição e Princípio Funcional do \textit{EMA}}
-\subsection{Descrição}
+\subsection{Breve descrição não-técnica e histórico}
+A incubadora neonatal é um equipamento que proporciona as condições de umidade e temperatura ideias dentro de uma câmara, e é geralmente utilizado em centros de terapia intensiva dentro de uma unidade hospitalar, afim de manter a temperatura corporal de pacientes (infantis) que não conseguem regular a temperatura corporal de maneira apropriada.
+
+O equipamento pode utilizar técnicas de controle em malha fechada e sensoriamento de temperatura e umidade afim de determinar os parâmetros ótimos para uma condição estável do paciente.
+
+Equipamentos do tipo existem desde o século 17, quando se desenvolveram em Paris \textit{designs} baseados em incubadoras de galinhas, afim de manter infantis quentes.
+
+Após a Segunda Guerra Mundial e principalmente nos anos 60, várias tecnologias de suporte ao aparelho respiratório foram desenvolvidas, atribuídas à prosperidade econômica e o boom do pós-guerra, com melhorias e inclusão total do tratamento de doenças congenitais sendo realizado nos hospitais, incluindo a instalação e uso de incubadoras.
+
+Para mais informações na história da incubadora, sugere-se a leitura de \cite{baker}.
+
+Vale-se notar que o público alvo da incubadora neonatal são bebês prematuros e com doenças congenitais em um ambiente clínico. Apesar, incubadoras também são utilizadas com animais domésticos neonatais e para o transporte de pacientes, esta última configuração exigindo especificações diferenciadas, dado a natureza complexa de locomoção de pacientes enfermos.
+
 \subsection{Princípio Funcional}
-\subsection{Parâmetros de Uso}
-\subsection{Especificações Técnicas}
-\subsection{Avaliação Técnica}
+O funcional da incubadora é simples comparado a outros equipamentos clínicos modernos: o objetivo é manter temperatura e umidade numa certa faixa alvo. Para tal, podem ser utilizados sistemas em malha aberta ou malha fechada, com a variável de controle podendo ser a temperatura do ar (sistema tipo TAC), ou a pele do infatil (sistema tipo TIC, via epidermial).
+
+Uma ventoinha elétrica estilo \textit{fan} sopra ar filtrado sobre uma resistência elétrica e um reservatório de água. 
+
+O ar pode ser umidificado por difusão ou utilizando um evaporador ultrasônico e é esquentado por condução ao encostar nos elementos quentes da resistência. Incubadoras também possuem válvulas de entrada controlada de oxigênio.
+
+Esse ar entra na \textit{cúpula} por uma corrente de convecção e é realimentado pelo sistema ou sai para o ambiente por saídas convencionais ou por compartimentos específicos, que passam por alguns componentes elétricos e ajudam no controle da quantidade de CO2 na incubadora.
+
+\subsection{Estrutura}
+
+A incubadora é formada por três blocos distintos: a base, a cúpula e uma seção intermediária. Uma breve descrição destes três blocos segue.
+
+\begin{itemize}
+    \item Base: permite que ajustes ergonomicos como altura sejam realizados, geralmente por controles utilizando os pé.
+    \item Cúpula: formada por acrílico transparente, de camada simples ou dupla, com portinholas de acesso e guarnições siliconizadas. Portinholas projetadas pra abertura com o cotovelo, evitando uso das mãos. Também devem permitir a passagem de Raios X.
+
+    Podem ter aberturas tipo íris, afim de passar tubos e fios, com regulagem de abertura e fechamento.
+
+    \item Compartimento Intermediário: Contém base metálica que isola a cúpula e dá posicionamento à bandeja que contém o bebê.
+
+    Abaixo, os sistemas de circulação de ar (filtro), umidificação (com unidade para inserir água no sistema) e controle, com entrada de oxigênio via válvula limitadora.
+    
+\end{itemize}
+
+\subsection{Informações sobre componentes e alguns parâmetros}
+
+Os filtros utilizados geralmente são do tipo HEPA, filtrando até 99\% de 3 microns\cite{fisher}. 
+
+Observou-se em sites de especializados de venda de insumos para o setor médico, com o \textit{boothmed}, uma gama de potências para os aquecedores, de 200W até 600W.
+
+O método de controle também varia. Equipamentos podem ter medição simples e controle estilo "\textit{on-off}" ou com controladores proporcionais-derivadores-integradores, obtendo resposta de diferentes sensores de temperatura e possivelmente com sensor na pele do paciente (o que a literatura indica ser evitado devido a dificuldade introduzida no manuseio e possíveis danos ao paciente).
+
+As portinholas da incubadora possuem um design particularmente interessante, que deve possibilitar a abertura com o cotovelo, minimizando o contato com superfícies e possivelmente introduzindo patógenos dentro da cúpula.
 
 \section{Estudo de Mercado}
 
+As fabricantes de incubadoras neonatais são diversas, marcas incluem Comen, Drager, Heal Force, Fanem, Olidef dentre outras, sendo Fanem e Olidef as marcas com maior penetração no mercado brasileiro.
+
+O custo de incubadoras é volátil e variável. Fatores alterantes incluem a marca, materiais de fabricação, especificações técnicas e tecnológicas etc.
+
+O valor das incubadoras se encontra entre R\$25.000,00 até R\$45.000,00, com algumas \textit{outliers}, podendo alcançar valores bem mais elevados. O preço, no entanto é compatível com a tecnologia utilizada na fabricação, logicamente dependendo do propósito e qualidade do equipamento.
+
+Na próxima seção, serão abordadas as normas aplicáveis. No entanto, vale-se já falar que todas as incubadoras devem estar apropriadamente registradas junto à ANVISA, no enquadramento de equipamento eletromédico. Isso é um dado importante e é aqui citado pois deve ser verificado na hora da compra. Na nossa consulta, nem todas as lojas e fabricantes colocam à mostra a informação com o número de cadastro do equipamento, podendo acarretar em problemas burocráticos ou até de segurança, em casos extremamente graves.
+
 \section{Normas Aplicáveis}
+Além das normas usuais de segurança de equipamentos eletromédicos, como a \texttt{NBR IEC 60601-1}, existem a \texttt{NBR IEC 60601-2-19}, que trata especificamente de prescrições de segurança para incubadoras neonatais e a \texttt{NBR IEC 60601-2-20} e sua errata, que tratam especificamente de incubadoras de transporte. 
+
+O conjunto de padrões específico da \texttt{NBR IEC 60601-2-20} trata sobre critérios de posicionamento de sensores, estipulando que a medida de temperatura da mesa deve ser, por exemplo, feita em cinco pontos distintos.
+
+Além, dois registros vigentes no SOMASUS existem para a incubadora: \texttt{E528 - Incubadora Neonatal (estacionária)} e \texttt{E529 - Incubadora de Transporte Neonatal}. 
+
+Uma leitura complementar de avaliação feita nessas bases normativas pode ser realizada a partir de \cite{rosane}. Também recomenda-se fortemente a leitura das normativas e cadastro no SOMASUS.
 
 \section{Aplicação do EMA na saúde}
-\subsection{Utilização}
 \subsection{Profissionais Responsáveis}
+Treinamento no uso do equipamento é necessário a todos que trabalham na seção clínica de uma UTI neonatal. A manutenção, como encher o reservatório de água, por exemplo, geralmente recaí sob os cuidados de enfermeiras.
+
+Seguindo os protocolos clínicos conhecidos informalmente como "caos controlado", é importante que quaisquer profissional que entre em contato com o equipamento reconheça sua função, controles, sinalizações e avisos.
+
+Além disso, é de responsabilidade do Engenheiro Clínico fazer conhecimento do estado do equipamento, sua instalação elétrica e seus parâmetros funcionais, observando, por exemplo, se o filtro HEPA foi trocado adequadamente.
+
+\section{Sobre a Plataforma TMH Digital}
+\subsection{O conteúdo da plataforma é de fácil entendimento?}
+O grupo julgou positivamente o entendimento dos conteúdos vistos no website.
+
+\subsection{Os  equipamentos  apresentados  na  plataforma  precisam  ser atualizados?}
+Exposto o nosso trabalho, realizado com fontes externas além do TMH, julgou-se que o TMH fez uma boa introdução ao equipamento médico. Uma atualização que o grupo julgou pertinente, e que auxiliou no compreendimento do conteúdo em questão, foi a busca por vídeos explicativos e didáticos, e de situações reais do uso da incubadora.
 
 \section{Conclusão}
+Nesse trabalho, foram observadas características funcionais, normativas e de uso da incubadora, além de um breve resgate histórico da tecnologia. Apesar do foco tecnológico dado no documento, a real relevância são nas inúmeras vidas salvas por essa tecnologia todos os anos. 
 
-\cite{Test}
+O compreendimento técnico aliado com esse nobre propósito permite obter uma sensação de dever e de enorme responsabilidade ao projetar e realizar manutenção em equipamentos dessa natureza, o que contribuí fortemente para a boa formação do Engenheiro Clínico e Biomédico.
 
 \bibliographystyle{IEEEtran}
 
